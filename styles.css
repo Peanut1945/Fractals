@@ -1,0 +1,174 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #255f85;
+    overflow-x: hidden;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: 525;
+}
+
+/* menu */
+header{
+    /* background-color: #3a1772; */
+    background-image: url(/images/Mandelbrot.jpg);
+    background-attachment: fixed;
+    height: 100vh;
+    width: min(100vw);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#mainMenu{
+    height: inherit;
+    width:50vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.listIteam{
+    text-decoration: none;
+    list-style: none;
+    font-size: clamp(2rem, 6.5vw, 6.5rem);
+    width: inherit;
+    gap: 5vw;
+    text-align: start;
+    transition: opacity 0.5s ease;
+    color: #FFFFFF;
+    margin-left: 4vw ;
+}
+/* hover effect */
+
+#mainMenu:hover > .listIteam{
+    opacity: 0.3;
+}
+#mainMenu:hover > .listIteam:hover{
+    opacity: 1;
+}
+/* canvases in header */
+.headCan{
+    border: 0;
+    padding: 0;
+    width: 24vw;
+    height: inherit;
+}
+/* drawing content */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#snowflake{
+    margin-top: 7vh;
+}
+.koch-interact{
+    position: sticky;
+    top: 0;
+    z-index: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+    height: 49vh;
+    width: clamp(375px,80vw,100vw);
+    padding-bottom: 2vh;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    background-color: #205374;
+    border: black 5px;
+    border-style:solid;
+    border-top: #3f3f3f 5px solid; 
+    border-radius: 9px;
+    box-shadow: 0px -2px 0.5rem black;
+    margin: 0;
+    padding: 0;
+    height: 49vh;
+    width: clamp(375px,80vw,100vw);
+}
+.serpinski-interact{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    background-color: #205374;
+    border: black 5px;
+    border-style:solid;
+    border-top: #3f3f3f 5px solid; 
+    border-radius: 9px;
+    box-shadow: 0px -2px 0.5rem black;
+    margin-top: 10vh;
+    height: 50vh;
+    width: clamp(375px,80vw,100vw);
+}
+.settings{
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #1a4645;
+    padding: 4px;
+    border-radius: 7px;
+    border: black solid;
+}
+.set{
+    width: fit-content;
+    height: fit-content;
+}
+.slider{
+    -webkit-appearance: none; 
+    appearance: none;
+    border-radius: 9px;
+    opacity: 2;
+    height: 13 px;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+    background: #34495E  ;
+    width: 10%;
+    height: 12px;
+    border-radius: 7px;
+}
+
+canvas{
+    border: 5px;
+}
+/* end */
+footer{
+    height: fit-content;
+    width: 50vw;
+    margin-top: 25vh;
+    /* background-color: #205374; */
+    background-color: #051821;
+    margin-left: 9vw;
+    padding: 2rem;
+    margin-bottom: 10vh;
+    border-radius: 9px;
+    border: #15374d solid;
+    box-shadow: 0 0 1rem black;
+    color: white;
+}
+.footer-button{
+    text-decoration: none;
+    color: white;
+    border-radius: 40px;
+    padding: 10px;
+    background-color: #1e4e6d;
+}
+.footer-button:hover{
+    background-color:#183c54 ;
+    transition: all 0.2s ease;
+}

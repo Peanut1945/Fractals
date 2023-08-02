@@ -1,0 +1,138 @@
+body{
+    background-color: #f58800;
+    color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+header{
+    position: fixed;
+    background-color: #f58800;
+    margin: 0;
+    padding-left: 1rem;
+    width: 100vw;
+    height: 15vh;
+    /*  box-shadow: 0 0 0.25rem #000000; */
+    text-shadow: 0 0 0.25rem #272727;
+}
+h1{
+    margin-bottom: 1vh;
+}
+/* nav */
+.listIteam{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: clamp(20px,1.2em,6rem);
+    transition: opacity 0.3s ease;
+}
+.mainMenu:hover > .listIteam{
+    opacity: 0.3;
+}
+.mainMenu:hover > .listIteam:hover{
+    opacity: 1;
+}
+.mainMenu{
+    display: flex;
+    gap: 2vw;
+}
+/* main explaination */
+main{
+    background-color: #1a4645;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin-top: 15vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-self: center;
+    font-size: clamp(0.9rem,2.75vw,20px);
+    box-shadow: 10px 10px #000000;
+
+}
+.section{
+    display: flex;
+    margin: 2vh;
+}
+p{
+    margin-left: 2vw;
+    max-width: 40vw;
+}
+/* canvas{
+    height: 35vh;
+    width: 50vw;
+    margin: 0;
+} */
+.mainTwo{
+    background-color: #3a1772;
+}
+
+.Image{
+    max-width: 50vw;
+    width: auto;
+    height: auto;
+    border-radius: 7px;
+    box-shadow: 10px 10px 5px #266867;
+}
+#Circled-Koch{
+    max-width: 25vw;
+    width: auto;
+    height: auto;
+}
+
+/* perimeter page */
+.main-Perimeter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+.page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75vw;
+    height: 50vh;
+    margin-top: 10vh;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.scroll-button{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    width: 5vw;
+    height: 8vw;
+    padding: 0;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background-color: #6c6c6c;
+}
+#left:hover{
+    background-color: #4a4949;
+}
+#right:hover{
+    background-color: #4a4949;
+}
+#left> img{
+    width: 5vw;
+}
+#right>img{
+    width: 5vw;
+}
+.text{
+    width: 22vw;
+    margin: 0;
+    margin-bottom: 13vh;
+    /* padding-right: 1vw; */
+    text-align: start;
+    
+}

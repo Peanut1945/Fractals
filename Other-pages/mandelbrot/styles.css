@@ -1,0 +1,72 @@
+body{
+    overflow-x: hidden;
+    background-color: #f58800;
+    color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+canvas {
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 0 2rem #051821;
+    cursor: crosshair;
+    width: 90vw;
+    height: 45vw;
+}
+
+/* nav */
+.listIteam{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: clamp(20px,1.2em,6rem);
+    transition: opacity 0.3s ease;
+}
+.mainMenu:hover > .listIteam{
+    opacity: 0.3;
+}
+.mainMenu:hover > .listIteam:hover{
+    opacity: 1;
+}
+.mainMenu{
+    display: flex;
+    gap: 2vw;
+}
+/* main */
+main{
+    background-color: #1a4645;
+    width: 100vw;
+    height: 55vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.note{
+    justify-self: flex-end;
+    margin-top: 1rem;
+    font-size: 15px;
+}
+
+/* footer */
+footer{
+    font-size: 17px;
+    text-shadow:  0 0 5px lightblue;
+    margin: 1vw;
+    color: #1a4645;
+}
+/* info exclusive page */
+.info{
+    display: flex;
+    height: 60vh;
+    width: 80vw;
+    padding: 5vw;
+    font-size: clamp(11px,0.95em,4rem);
+}
+#info-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

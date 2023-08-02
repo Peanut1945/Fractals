@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fractals</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header>
+        <nav >
+            <ul id = "mainMenu">
+                <a class="listIteam" href="Other-pages/Fractions-dimentions.html">Fractional Dimensions</a>
+                <a class="listIteam" href="Other-pages/Perimeter.html">Koch Perimeter</a>
+                <a class="listIteam" href="/Other-pages//mandelbrot/Mandelbrot.html">Mandelbrot</a>
+                <a class="listIteam" href="/Other-pages/info page/Info.html">Info</a>
+
+            </ul>
+        </nav>
+    </header>
+   <main>
+    <div class="koch-interact">
+        <div class="wrapper">
+            <canvas id="snowflake"></canvas>
+            <div class="settings">
+                <div class="set">
+                    <label for="iterations">Iterations:</label>
+                    <input type="range" id="iterations" class="slider" name="iterations" min="1" max="8">
+                </div>
+                <div class="set">
+                    <label for="colour">colour:</label>
+                    <input type="color" name="colour" id="colour">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="serpinski-interact">
+        <canvas id="Triangle"></canvas>
+        <div class="settings">
+            <div class="set">
+                <label for="iterations">Iterations:</label>
+                <input type="range" id="iterations-serpin" class="slider" name="iterations" min="0" max="6">
+            </div>
+            <div class="set">
+                <label for="colour">colour:</label>
+                <input type="color" name="colour" id="colour-serpin">
+            </div>
+        </div>
+    </div>
+   </main>
+   <footer><a href="Other-pages/info page/Info.html" class="footer-button">about me </a>
+        <p>Click her to find out more about me:</p>
+        <br>
+        <p>Or look over here to view my github:</p>
+        <a href="https://github.com/Peanut1945" class="footer-button">Github</a>
+    </footer>
+</body>
+</html>
