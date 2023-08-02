@@ -11,7 +11,7 @@ body{
 /* menu */
 header{
     /* background-color: #3a1772; */
-    background-image: url(/images/Mandelbrot.jpg);
+    background-image: url(images/Mandelbrot.jpg);
     background-attachment: fixed;
     height: 100vh;
     width: min(100vw);
