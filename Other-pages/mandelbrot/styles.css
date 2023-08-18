@@ -14,7 +14,7 @@ canvas {
     box-shadow: 0 0 2rem #051821;
     cursor: crosshair;
     width: 90vw;
-    height: 45vw;
+    height: clamp(25vh,45vw,95vh);
 }
 
 /* nav */
@@ -36,9 +36,12 @@ canvas {
 }
 /* main */
 main{
+    margin-top: 3em;
     background-color: #1a4645;
     width: 100vw;
-    height: 55vw;
+    height: fit-content;
+    padding-top: 5px;
+    padding-bottom: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,11 +54,11 @@ main{
 }
 
 /* footer */
-footer{
+#Mind{
     font-size: 17px;
     text-shadow:  0 0 5px lightblue;
     margin: 1vw;
-    color: #1a4645;
+    color: aliceblue;
 }
 /* info exclusive page */
 .info{

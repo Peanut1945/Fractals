@@ -85,7 +85,7 @@ main{
 }
 .wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #205374;
     border: black 5px;
     border-style:solid;
