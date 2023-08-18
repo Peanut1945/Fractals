@@ -26,7 +26,7 @@ const canvas = document.querySelector("#snowflake")
 const flake = canvas.getContext("2d")
 
 let rect = canvas.getBoundingClientRect()
-canvas.width = rect.width * devicePixelRatio - 450 
+canvas.width = rect.width * devicePixelRatio - 300 
 canvas.height = rect.height * devicePixelRatio + 400
 
 flake.scale(devicePixelRatio , devicePixelRatio)
@@ -35,7 +35,7 @@ flake.scale(devicePixelRatio , devicePixelRatio)
 // canvas.style.height = rect.height + "px"
 
 
-canvas.style.width = `clamp(207px,${(rect.width*0.5)/10}vw,100vw)`
+canvas.style.width = `clamp(207px,${(rect.width*0.5)/20}vw,100vw)`
 canvas.style.height = rect.height + "px"
 
 
@@ -197,7 +197,7 @@ serpinSlider.value = 4
 serpinSlider.addEventListener("change" , () => {
     context.clearRect(0, 0, canvas.width, canvas.height)
     index = serpinSlider.value
-    drawSerpinski(x,y,length , index,colour)
+    drawSerpinski(x,y,length , index,colourSerp)
 })
 
 //sierpinski COlour
