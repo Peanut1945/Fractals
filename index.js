@@ -35,7 +35,7 @@ flake.scale(devicePixelRatio , devicePixelRatio)
 // canvas.style.height = rect.height + "px"
 
 
-canvas.style.width = `clamp(207px,${(rect.width*0.5)/20}vw,100vw)`
+canvas.style.width = `clamp(207px,${(rect.width*0.5)/20}vw,50vw)`
 canvas.style.height = rect.height + "px"
 
 
